@@ -1,0 +1,269 @@
+* {
+	box-sizing: border-box;	
+}
+
+:root {
+	--bcolor: #202124;
+	--text-color: #e8eaed;
+	--s-color: white;
+	--e-color: white;
+	--a-color: white;
+	--r-color: white;
+	--c-color: white;
+	--h-color: white;
+	--advanced-search-color: #f28b82;
+	--main-border: 1px solid #444746;
+	--input-background-color: #1f1f1f;
+	--input-border: 1px solid #5c5f5e;
+	--input-text-color: #bdc1c6;
+	--label-text-color: #969ba1;
+	--important-words-color: white;
+	--advanced-text-color: #202124;
+	--submit-background-color: #8ab4f8;
+	--footer-background: #171717;
+}
+
+.whiteMode {
+	--s-color: rgb(66, 133, 244);
+	--e-color: rgb(234, 67, 53);
+	--a-color: rgb(251, 188, 5);
+	--r-color: rgb(66, 133, 244);
+	--c-color: rgb(52, 168, 83);
+	--h-color: rgb(234, 67, 53);
+	--text-color: black;
+	--bcolor: white;
+	--input-background-color: white;
+	--main-border: 1px solid #ebebeb;
+	--text-color: black;
+	--input-text-color: black;
+	--important-words-color: var(--text-color);
+	--advanced-text-color: white;
+	--submit-background-color: #4d90fe;
+	--footer-background: #f2f2f2;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+	background-color: var(--bcolor);
+	color: var(--text-color);
+}
+
+header {
+	height: 20dvh;
+	margin: 0 20px;
+}
+
+header .top {
+	height: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.top .logo {
+	font-size: 30px;
+}
+
+.logo span:nth-child(1) {
+	color: var(--s-color);
+}
+
+.logo span:nth-child(2) {
+	color: var(--e-color);
+}
+
+.logo span:nth-child(3) {
+	color: var(--a-color);
+}
+
+.logo span:nth-child(4) {
+	color: var(--r-color);
+}
+
+.logo span:nth-child(5) {
+	color: var(--c-color);
+}
+
+.logo span:nth-child(6) {
+	color: var(--h-color);
+}
+
+.links button {
+	background-color: var(--bcolor);
+	border: none;
+	color: var(--text-color);
+	text-decoration: none;
+	margin-right: 10px;
+	cursor: pointer;
+	font-size: 17px;
+}
+
+.links button:hover {
+	text-decoration: underline;
+}
+
+.links button a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+.bottom {
+	margin: 0 30px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bottom .advancedSearch {
+	color: var(--advanced-search-color);
+	font-size: 20px;
+}
+
+.switch-theme {
+	border: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	background-color: var(--bcolor);
+  margin-right: 20px;
+}
+
+.whiteMode .switch-theme:hover {
+	background-color: #eeeeee;
+}
+
+.switch-theme:hover {
+	background-color: #333;
+}
+
+.switch-theme svg {
+	fill: #a0a0a0;
+}
+
+.switch-theme svg:nth-child(1) {
+	display: none;
+}
+
+.whiteMode .switch-theme svg:nth-child(1) {
+	display: block;
+}
+
+.whiteMode .switch-theme svg:nth-child(2) {
+	display: none;
+}
+
+main {
+	border-top: var(--main-border);
+	height: 70dvh;
+}
+
+.container {
+	padding-left: 50px;
+}
+
+.container .head {
+	height: 40px;
+	font-size: 20px;
+	color: var(--text-color);
+}
+
+.explainHead {
+	font-size: 15px;
+	font-weight: 800;
+	color: var(--text-color);
+}
+
+.head .hidden{
+	visibility: hidden;
+}
+
+.container .inputFields {
+	color: var(--input-text-color);
+}
+
+.inputFields div {
+	margin-top: 25px;
+}
+
+.container label {
+	display: inline-block;
+	width: 220px;
+}
+
+.inputFields input {
+	width: 35vw;
+	height: 5%;
+	font-size: 18px;
+	background-color: var(--input-background-color);
+	border: var(--input-border);
+	color: var(--input-text-color);
+	padding-left: 10px;
+}
+
+.inputFields input:focus {
+	border: 1px #7692F5 solid;
+	outline: none;
+}
+
+.inputFields div > span {
+	margin-left: 10px;
+	font-size: 15px;
+}
+
+.important-words {
+	color: var(--important-words-color);
+	font-weight: 400;
+	margin-left: 2px;
+	font-stretch: expanded;
+}
+
+.submit {
+	width: 150px;
+	height: 35px;
+	margin-top: 20px;
+	margin-left: calc(70px + 35vw);
+	background-color: var(--submit-background-color);
+	color: var(--advanced-text-color);
+	border: none;
+	border-radius: 3px;
+	font-size: 15px;
+}
+
+footer {
+	height: 10dvh;
+	background-color: var(--footer-background);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+}
+
+@media (max-width: 1300px){
+	.inputFields div > span {
+		display: none;
+	}
+
+}
+
+@media (max-width: 450px){
+	.inputFields label , .inputFeilds input {
+		display: block;
+	}
+
+	.inputFields label {
+		margin-bottom: 15px;
+	}
+	
+	.inputFields input {
+		width: 70vw;
+	}
+
+	.submit {
+		margin-left: calc(70vw - 150px);
+	}
+}

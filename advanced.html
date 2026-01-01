@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Advanced</title>
+		<script type="text/javascript" src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Mountains+of+Christmas:wght@400;700&family=New+Rocker&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quintessential&family=Raleway:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="advanced.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body data-page="advanced">
+    <header>
+      <div class="top">
+        <div class="logo">
+						<span>S</span><span>e</span><span>a</span><span>r</span><span>c</span><span>h</span>
+        </div>
+
+        <div class="links">
+          <button><a href="index.html">Search</a></button>
+          <button><a href="image.html">Image</a></button>
+        </div>
+      </div>
+
+      <div class="bottom">
+       <div class="advancedSearch">
+         Advanced Search
+       </div> 
+
+			 <button class="switch-theme">
+						<svg xmlns="http://www.w3.org/2000/svg" 
+							height="24px" viewBox="0 -960 960 960" 
+							width="24px" fill="#e3e3e3">
+							<path d="M480-120q-150 0-255-105T120-480q0-150     
+							105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 
+							75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 
+							13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+					
+							<svg xmlns="http://www.w3.org/2000/svg" 
+									 height="24px" viewBox="0 -960 960 960" 
+									 width="24px" fill="#e3e3e3">
+								<path d="M440-760v-160h80v160h-80Zm266 110-55-55 
+								112-115 56 57-113 113Zm54 
+								210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 
+								140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 
+								110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 
+								29 27 29 28-114 114Zm283-100q-100 0-170-70t-70-170q0-100 
+								70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 
+								70Z"></svg>
+			  </button>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <form action="https://google.com/search">
+        <div class="inputFields">
+            <div class="head">
+              <label for="hidden">Find pages with...</label>
+              <input type="text" id="hidden" class="hidden" autocomplete="off"/>
+              <span class="explainHead">To do this in the search box.</span>
+            </div>
+
+            <div>
+              <label for="all">all these words:</label>
+              <input type="text" id="all" name="as_q" autocomplete="off">
+              <span>Type the important words: <span class="important-words">tri-colour rat terrier</span></span> 
+            </div>
+            
+            <div>
+              <label for="exact">this exact word or phrase:</label>
+              <input type="text" id="exact" name="as_epq" autocomplete="off">
+              <span>Put exact words in quotes:<span class="important-words">"rat terrier"</span></span>
+            </div>
+            
+            <div>
+              <label for="any">any of these words:</label>
+              <input type="text" id="any" name="as_oq" autocomplete="off">
+              <span>Type <span class="important-words">OR</span> between all the words you want: <span class="important-words">miniature OR standard</span></span>
+            </div>
+            
+            <div>
+              <label for="none">none of these words:</label>
+              <input type="text" id="none" name="as_eq" autocomplete="off">
+              <span>Put a minus sign just before words that you don't want:<span class="important-words">-rodent, -"Jack Russell"</span></span>
+            </div>
+            
+          </div>
+          <button type="submit" class="submit">Advanced Search</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+			    <p>&copy; 2025 Mahmoud Abd Elqader.</p>
+    </footer>
+  </body>
+</html>
+
